@@ -1,0 +1,11 @@
+def water_consumption(X):
+    if X>=2000:
+        return "Yes"
+    else:
+        return "No"
+T=int(input())
+for i in range(T):
+    X=int(input())
+    result=water_consumption(X)
+    print(result)
+    
