@@ -1,0 +1,9 @@
+def max_chocolates(x, y, z):
+    money = x * 5 + y * 10
+    max_chocs = money // z
+    return max_chocs
+t = int(input())
+for _ in range(t):
+    x, y, z = map(int, input().split())
+    result = max_chocolates(x, y, z)
+    print(result)
