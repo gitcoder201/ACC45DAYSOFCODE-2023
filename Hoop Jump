@@ -1,0 +1,8 @@
+T=int(input())
+for i in range(T):
+    N=int(input())
+    if N%2==1:
+        lasthoop=(N+1)//2
+    else:
+        lasthoop=N//2
+    print(lasthoop)
