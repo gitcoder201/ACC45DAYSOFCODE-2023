@@ -1,0 +1,10 @@
+def calculate_amount(X,Y):
+    if Y<=X:
+        return Y
+    else:
+            return X+(Y-X)*2
+T=int(input())
+for i in range(T):
+    X,Y=map(int,input().split())
+    total_amount=calculate_amount(X,Y)
+    print(total_amount)
