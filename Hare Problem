@@ -1,0 +1,11 @@
+def int1(x):
+    if int(x)==x:
+        return x
+    else:
+        return int(x)+1
+for _ in range(int(input())):
+    l,v1,v2=map(int,input().split())
+    if (int1(l/v1)-int1(l/v2))>=1:
+        print(int(int1(l/v1)-int1(l/v2)-1))
+    else:
+        print(-1)
